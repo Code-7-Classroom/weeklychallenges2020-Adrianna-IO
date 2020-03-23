@@ -1,0 +1,17 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 25px);
+    grid-template-rows: repeat(8, 25px);
+    max-width: 200px;
+    color: white;
+    background-color: white;
+}
+
+.one, .three, .five, .seven, .ten, .twelve, .fourteen, .sixteen, .seventeen, .nineteen,
+.twenty-one, .twenty-three, .twenty-six, .twenty-eight, .thirty, .thirty-two, .thirty-three, 
+.thirty-five, .thirty-seven, .thirty-nine, .forty-two, .forty-four, .forty-six, .forty-eight,
+.forty-nine, .fifty-one, .fifty-three, .fifty-five, .fifty-eight, .sixty, .sixty-two, .sixty-four {
+    background-color: black;
+    color: black;
+}
+

@@ -1,0 +1,12 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 55%);
+    
+    
+}
+
+.product {
+    text-align: center;
+    background-color: pink;
+}
