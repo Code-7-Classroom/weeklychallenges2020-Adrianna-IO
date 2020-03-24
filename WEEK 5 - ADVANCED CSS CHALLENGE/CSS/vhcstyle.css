@@ -1,0 +1,48 @@
+/*  
+Very Hard: Create a newspaper component using HTML and Sass while following BEM guidelines. 
+The newspaper should contain at least: -Bold headline at the top -3 Columns -2 Images -2 Modifier 
+Classes -1 Use of pseudo-elements (:before/:after) The contents of the newspaper are up to you, lorem ipsum text is acceptable. */
+
+* {
+    clear: none;
+}
+
+h1, h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    color: #211a23;
+    padding: 5px;
+    text-align: center;
+}
+
+.images {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 5px;
+ }
+
+
+.--red {
+    background-color: red;
+}
+
+.--pink {
+    background-color: pink;
+}
+
+.--white {
+    background-color: seashell;
+}
+
+p::first-letter {
+    color: black;
+    font-size: x-large;
+}
