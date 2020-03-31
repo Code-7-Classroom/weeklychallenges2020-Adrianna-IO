@@ -1,0 +1,954 @@
+ /*=======================
+================== MOBILE DEVICES =================
+===================*/
+
+@media screen and (max-width: 650px) and (min-width: 300px) {
+
+    * {
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+      } 
+      
+
+       /*=====================*/
+  /*=======NAV==========*/
+  /*=====================*/
+
+      .main-navbar{
+        background:#16262E;
+        width: 100%;
+        
+      }
+
+
+  .navbar-list li a{
+    color:white;
+    letter-spacing: 4px;
+    padding:20px;
+    margin: 15px 0px;
+    text-decoration: none;
+    float: none;
+    width: 100%;
+    font-family: Helvetica,Arial,sans-serif;
+    }
+
+    .navbar-list li{
+        list-style:none;
+        padding: 10px;
+      }
+  
+  .logo h1 a {
+    display: none;
+  }    
+
+
+ /*=====================*/
+  /*=======BODY==========*/
+  /*=====================*/
+
+
+  
+  body {
+    background-color:#DBC2CF;
+  }
+  
+  .heroText h2 {
+    display: flex;
+    justify-content: center;
+    color:#3C7A89;
+    font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing:10px;
+      padding:15px;
+      text-decoration: none;
+      font-size: 40px;
+      line-height: 50px;
+  }
+  
+    .main-slideshow {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 415px;
+    }
+  
+    .center-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  
+    .product h2 {
+      line-height: 30px;
+      padding: 5px;
+    }
+  
+  
+  .grid-container-left {
+  width: 100%;
+  }
+  
+  .featuredText {
+    display: flex;
+    justify-content: center;
+    color:#3C7A89;
+    font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing:10px;
+      padding-top:40px;
+      padding-left: 35px;
+      text-decoration: none;
+      font-size: 40px;
+      line-height: 50px;
+  }
+    
+    .featured-products-grid {
+      display: grid;
+      grid-gap: 15px;
+      padding: 10px;
+
+  }
+
+
+  input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+.filters {
+    text-align: center;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: large;
+    padding: 15px;
+  }
+   
+.filters * {
+    display: inline-block;
+  }
+   
+.filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+   
+.filters label:hover {
+    background: #2E4756;
+    color: white;
+  }
+
+
+
+
+.grid-container {
+    margin: 0px 20px;
+    width: 90%;
+    padding-bottom: 50px;
+    }
+
+  .posts {
+    display: grid;
+    grid-gap: 15px;
+    list-style: none;
+    border: 1px solid #2E4756;
+  }
+   
+
+  .product {
+    text-align: center;
+    background-color: #DBC2CF;
+    padding: 10px;
+
+}
+
+.pborder {
+  border: 1px solid #2E4756;
+}  
+  
+.p-description {
+line-height: 17px;
+color: #2E4756;
+
+} 
+
+
+.p-price {
+line-height: 40px;
+font-size: large;
+font-weight: bold;
+}
+
+
+
+  /*Anything with data-category will be displayed.*/
+
+[value="All"]:checked ~ .posts [data-category] {
+    display: block;
+}
+
+
+  /* Ex: If CSS is checked, the selector selects anything that doesn't have CSS in it's data category and it's hidden.*/
+[value="livingroom"]:checked ~ .posts .post:not([data-category~="livingroom"]),
+[value="bedroom"]:checked ~ .posts .post:not([data-category~="bedroom"]),
+[value="office"]:checked ~ .posts .post:not([data-category~="office"]) {
+  display: none;
+}
+
+/*Ex: If the label All is checked, the filter labeled All will be selected and shown as an active filter.*/
+[value="All"]:checked ~ .filters [for="All"],
+[value="livingroom"]:checked ~ .filters [for="livingroom"],
+[value="bedroom"]:checked ~ .filters [for="bedroom"],
+[value="office"]:checked ~ .filters [for="office"] {
+  background: #2E4756;
+  color: white;
+}
+
+
+  
+  .contact-hero h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: x-large;
+    letter-spacing: 6px;
+    padding: 15px;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+  
+  
+  .contact-form {
+      border-radius: 5px;
+    color:#2E4756;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom:100px;
+  }
+  
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+#subject {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+}
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #2E4756;
+    color:whitesmoke;
+    font-size: medium;
+    font-family: Helvetica,Arial,sans-serif;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+   /*=====================*/
+  /*=======FOOTER==========*/
+  /*=====================*/
+
+
+  
+  .footer {
+    background:#16262E;
+    width: 100%;
+    color: white; 
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+    
+  .socialmedia{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .socialmedia li{
+    list-style:none;
+    margin: 0px 20px;
+    display:inline-block;
+  }
+   
+  .fa {
+    font-size: 100px;
+    width: 20px;
+    text-decoration: none;
+    color:white; 
+  } 
+  
+}
+
+
+/*=======================
+================== TABLET DEVICES =================
+===================*/
+
+
+@media screen and (max-width: 1025px) and (min-width: 651px) {
+
+    * {
+        margin:0px;
+        padding: 0px;
+      } 
+
+     /*=====================*/
+  /*=======NAV==========*/
+  /*=====================*/
+
+
+    .main-navbar{
+        background:#16262E;
+        width: 100%;
+        background:#16262E;
+        display:flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding:20px;
+        max-height: 300px;
+        max-width: 100%;
+        }
+
+
+
+  .navbar-list li a{
+    color:white;
+    font-weight:bold;
+    letter-spacing: 4px;
+    text-decoration: none;
+    width: 99%;
+    margin: 0px 60px 0px 0px;
+    font-family: Helvetica,Arial,sans-serif;
+    }
+
+    .navbar-list li{
+        list-style:none;
+        display:inline-block;
+        padding-top: 5px;
+      }
+
+      .logo h1 a {
+        display: none;
+      } 
+
+
+ /*=====================*/
+  /*=======BODY==========*/
+  /*=====================*/
+
+
+  
+  body {
+    background-color:#DBC2CF;
+  }
+  
+
+  .heroText h2 {
+    display: flex;
+    justify-content: center;
+    color:#3C7A89;
+    font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing:15px;
+      padding:50px;
+      text-decoration: none;
+      font-size: 100px;
+      line-height: 50px;
+  }
+  
+    .main-slideshow {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 600px;
+    }
+  
+    .center-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  
+    .product h2 {
+      line-height: 30px;
+      padding: 5px;
+    }
+  
+  
+  .grid-container-left {
+  width: 100%;
+  }
+  
+  .featuredText {
+    display: flex;
+    justify-content: center;
+    color:#3C7A89;
+    font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing:10px;
+      padding-top:50px;
+      padding-left: 35px;
+      text-decoration: none;
+      font-size: 50px;
+      line-height: 60px;
+  }
+    
+    .featured-products-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-gap: 15px;
+      padding: 10px;
+    }
+
+    input[type="radio"] {
+      position: absolute;
+      left: -9999px;
+    }
+  
+  .filters {
+      text-align: center;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: large;
+      padding: 15px;
+    }
+     
+  .filters * {
+      display: inline-block;
+    }
+     
+  .filters label {
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.25rem;
+      min-width: 50px;
+      line-height: normal;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+     
+  .filters label:hover {
+      background: #2E4756;
+      color: white;
+    }
+  
+  
+  
+  
+  .grid-container {
+      margin: 0px 35px;
+      width: 90%;
+      padding-bottom: 50px;
+      }
+  
+    .posts {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+      list-style: none;
+      padding: 50px;
+      border: 1px solid #2E4756;
+    }
+     
+  
+    .product {
+      text-align: center;
+      background-color: #DBC2CF;
+      padding: 10px;
+  
+  }
+  
+  .pborder {
+    border: 1px solid #2E4756;
+  }  
+    
+  .p-description {
+  line-height: 17px;
+  color: #2E4756;
+  
+  } 
+  
+  
+  .p-price {
+  line-height: 40px;
+  font-size: large;
+  font-weight: bold;
+  }
+  
+  
+  
+    /*Anything with data-category will be displayed.*/
+  
+  [value="All"]:checked ~ .posts [data-category] {
+      display: block;
+  }
+  
+  
+    /* Ex: If CSS is checked, the selector selects anything that doesn't have CSS in it's data category and it's hidden.*/
+  [value="livingroom"]:checked ~ .posts .post:not([data-category~="livingroom"]),
+  [value="bedroom"]:checked ~ .posts .post:not([data-category~="bedroom"]),
+  [value="office"]:checked ~ .posts .post:not([data-category~="office"]) {
+    display: none;
+  }
+  
+  /*Ex: If the label All is checked, the filter labeled All will be selected and shown as an active filter.*/
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="livingroom"]:checked ~ .filters [for="livingroom"],
+  [value="bedroom"]:checked ~ .filters [for="bedroom"],
+  [value="office"]:checked ~ .filters [for="office"] {
+    background: #2E4756;
+    color: white;
+  }
+  
+  
+  .contact-hero h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: x-large;
+    letter-spacing: 6px;
+    padding: 15px;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+  
+
+  
+  
+  .contact-form {
+      border-radius: 5px;
+    color:#2E4756;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom:100px;
+  }
+  
+  
+  input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: medium;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+#subject {
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    margin: 8px 0;
+    padding: 12px 20px;
+}
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #2E4756;
+    color:whitesmoke;
+    font-size: medium;
+    font-family: Helvetica,Arial,sans-serif;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+   /*=====================*/
+  /*=======FOOTER==========*/
+  /*=====================*/
+  
+  .footer {
+    background:#16262E;
+    width: 100%;
+    position:relative;
+    bottom:0px;
+    color: white; 
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .socialmedia{
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .socialmedia li{
+    list-style:none;
+    margin: 0px 20px;
+    display:inline-block;
+    
+  }
+   
+  .fa {
+    font-size: 100px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 2px; 
+    color:white; 
+  } 
+  
+}
+
+/*=======================
+================== DESKTOP =================
+===================*/
+
+
+@media screen and (min-width: 1026px) {
+
+  * {
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  /*=====================*/
+  /*=======NAV BAR==========*/
+  /*=====================*/
+  
+  
+  .navbar-list li{
+    list-style:none;
+    margin: 0px 35px 0px 0px;
+    display: inline-block;
+    width: 25%;
+  }
+  
+  .main-navbar{
+    background:#16262E;
+    display: flex;
+    justify-content:flex-end;
+    padding:20px;
+    max-width: 100%;
+    font-family: Helvetica,Arial,sans-serif;
+  }
+  
+  .navbar-list li a{
+    color:white;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-decoration: none;
+    padding:20px;
+    font-size: 20px;
+    }
+  
+  .navbar-list li a:hover {
+    background-color:#3C7A89;
+  }
+
+
+  .logo h1 a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #16262E;
+    color: white;
+    padding: 15px 0px 10px 15px;
+    letter-spacing: 4px;
+  } 
+
+
+
+
+  /*=====================*/
+  /*=======BODY==========*/
+  /*=====================*/
+
+
+  
+  body {
+    background-color:#DBC2CF;
+    
+  }
+  
+  .heroText h2 {
+    display: flex;
+    justify-content: center;
+    color:#3C7A89;
+    font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing:15px;
+      padding:75px;
+      text-decoration: none;
+      font-size: 200px;
+      line-height: 100px;
+  }
+
+  .main-slideshow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .product h2 {
+    line-height: 30px;
+    padding: 5px;
+  }
+
+  .grid-container-left {
+    width: 95%;
+    }
+    
+    .featuredText {
+      display: flex;
+      justify-content: center;
+      color:#3C7A89;
+      font-family: 'Roboto Condensed', sans-serif;
+        letter-spacing:10px;
+        padding-top:75px;
+        text-decoration: none;
+        font-size: 75px;
+        line-height: 100px;
+    }
+      
+      .featured-products-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-gap: 15px;
+        padding: 25px;
+    
+        
+        
+        
+    }
+
+
+    input[type="radio"] {
+      position: absolute;
+      left: -9999px;
+    }
+  
+  .filters {
+      text-align: center;
+      font-family: Helvetica,Arial,sans-serif;
+      font-size: large;
+      padding: 15px;
+    }
+     
+  .filters * {
+      display: inline-block;
+    }
+     
+  .filters label {
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.25rem;
+      min-width: 50px;
+      line-height: normal;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+     
+  .filters label:hover {
+      background: #2E4756;
+      color: white;
+    }
+  
+  
+  
+  
+  .grid-container {
+      margin: 0px 75px;
+      width: 90%;
+      padding-bottom: 50px;
+      }
+  
+    .posts {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(4, 1fr);
+      list-style: none;
+      padding: 50px;
+      border: 1px solid #2E4756;
+      
+    }
+     
+  
+    .product {
+      text-align: center;
+      background-color: #DBC2CF;
+      padding: 10px;
+  
+  }
+  
+.pborder {
+  border: 1px solid #2E4756;
+}
+    
+  .p-description {
+  line-height: 17px;
+  color: #2E4756;
+  
+  } 
+  
+  
+  .p-price {
+  line-height: 40px;
+  font-size: large;
+  font-weight: bold;
+  }
+  
+  
+  
+    /*Anything with data-category will be displayed.*/
+  
+  [value="All"]:checked ~ .posts [data-category] {
+      display: block;
+  }
+  
+  
+    /* Ex: If CSS is checked, the selector selects anything that doesn't have CSS in it's data category and it's hidden.*/
+  [value="livingroom"]:checked ~ .posts .post:not([data-category~="livingroom"]),
+  [value="bedroom"]:checked ~ .posts .post:not([data-category~="bedroom"]),
+  [value="office"]:checked ~ .posts .post:not([data-category~="office"]) {
+    display: none;
+  }
+  
+  /*Ex: If the label All is checked, the filter labeled All will be selected and shown as an active filter.*/
+  [value="All"]:checked ~ .filters [for="All"],
+  [value="livingroom"]:checked ~ .filters [for="livingroom"],
+  [value="bedroom"]:checked ~ .filters [for="bedroom"],
+  [value="office"]:checked ~ .filters [for="office"] {
+    background: #2E4756;
+    color: white;
+  }
+
+
+.contact-hero h2{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 75px;
+  font-size: xx-large;
+  letter-spacing: 6px;
+  padding: 15px;
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+
+
+
+.contact-form {
+    border-radius: 5px;
+  color:#2E4756;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom:100px;
+}
+
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-size: medium;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#subject {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 12px 20px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #2E4756;
+  color:whitesmoke;
+  font-size: medium;
+  font-family: Helvetica,Arial,sans-serif;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+
+  /*=====================*/
+  /*=======FOOTER==========*/
+  /*=====================*/
+  
+  
+  .socialmedia{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .socialmedia li{
+    list-style:none;
+    margin: 0px 20px;
+    display:inline-block;
+    
+    
+    
+  }
+  
+  
+  .footer {
+    background:#16262E;
+    color: white;
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+    bottom: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  
+  .fa {
+    padding: 10px;
+    font-size: 100px;
+    width: 20px;
+    text-decoration: none;
+    margin: 5px 2px;
+    color:white;
+  }
+  
+  .fa:hover {
+      color: #3C7A89;
+  }
+  
+}
