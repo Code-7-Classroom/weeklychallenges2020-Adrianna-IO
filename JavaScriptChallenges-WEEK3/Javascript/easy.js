@@ -6,21 +6,17 @@
 
 
 function exercise(sport) {
-    return (function() {
-        return `Today's excercise: ${sport}!`
-    })
+    return `Today's excercise: ${sport}!`
 }
 
 var run = exercise('running');
-console.log(run()); 
+console.log(run); 
 
 
 
 function exercise(sport) {
-    return (function() {
-        return `Today's excercise: ${sport}!`
-    })
+    return `Today's excercise: ${sport}!`
 }
 
 var swim = exercise('swimming');
-console.log(swim()); 
+console.log(swim); 
