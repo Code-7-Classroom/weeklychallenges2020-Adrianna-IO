@@ -63,16 +63,28 @@ class Programmer extends Person {
         this.busy = true ? console.log(`${this.name} can't accept any new tasks right now.`) 
         : console.log(`${this.name} would love to take on a new responsibility.`);
     }
-    learnLanguages() {
-        
+    get listLanguages() {
+        return this.languages;
     }
+    set learnLanguages(language) {
+        this.languages.push(language);
+    }
+    
 
 }
 
-let adrianna = new Programmer(`Adrianna Isom-Owen`, `Jr. Software Developer`, 24, `HTML, CSS, JavaScript`);
-
-adrianna.offerNewTask();
 
 let alex = new Person(`Alex Owen`, `Army Sergeant`, 26);
+let adrianna = new Programmer(`Adrianna Isom-Owen`, `Jr. Software Developer`, 24, `HTML, CSS, JavaScript`);
 
 alex.fetchJob();
+alex.exercise();
+
+
+adrianna.fetchJob();
+adrianna.exercise();
+adrianna.acceptNewTask();
+console.log(adrianna);
+adrianna.completeTask();
+console.log(adrianna);
+adrianna.offerNewTask();
