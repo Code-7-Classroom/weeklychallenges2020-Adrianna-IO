@@ -1,3 +1,13 @@
+<!-- HARD: Create two buttons, one that when clicked turns the background of the body red. 
+The other, when clicked, turns the body's background color white. Each of the background 
+colors should be defined as class styles and when the buttons are pushed the body's classList 
+is updated to include the correct class for the background. 
+
+Create a single function that takes an input className and updates the body's classList 
+to ONLY include that className. -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +20,13 @@
       * {
     
         margin: 0;
-    
         padding: 0;
     
       }
     
       h1 {
     
-        color: red;
+        color:pink;
     
       }
     
@@ -27,44 +36,68 @@
     
       }
     
-      .bg-red {
+      .red {
     
         background-color: red;
     
       }
     
-      .bg-white {
+      .white {
     
         background-color: white;
     
       }
     
     </style>
-    </head>
-<body>
     
-      <button>
+    </head>
+
+
+<body>
+
+
+    <h1>Dom Manipulation Challenge</h1>
+      <button class="button--red">
     
         Turn it red!
     
       </button>
     
-      <button>
+      <button class="button--white">
     
         Turn it white!
     
       </button>
     
+
+
       <script>
     
        // Do Stuff Here
+
+
     
-       window.updateTheBackground = function(className) {
-    
-    
-    
+        // Red button to change the background to red, White button to change the background to white. Function will 
+       // take a parameter for className and update the body's default classList to include the arugement that we passed in.
+
+          const redButton = document.querySelector('.button--red');
+          const whiteButton = document.querySelector('.button--white');
+        
+     
+
+       window.updateTheBackground = (className) => {
+
+          document.body.classList = className;
        }
+
+       redButton.addEventListener('click', () => window.updateTheBackground('red'));
+        whiteButton.addEventListener('click', () => window.updateTheBackground('white'));
+   
+   
     
       </script>
+
+
 </body>
 </html>
+
