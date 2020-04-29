@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 
-const solarSystem = fs.readFile('../solarSystem.rtf', function(err, filetext) {
+const solarSystem = fs.readFile('./solarSystem.rtf', function(err, filetext) {
     if (err) {
         console.log(`Error: ${err}`)
     } else {
