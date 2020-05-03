@@ -1,0 +1,64 @@
+{
+    "employees": [
+        {
+            "employeeID": 375,
+            "name": "Adrianna I-O.",
+            "salary": 735000,
+            "departmentName": "Software Development"
+        },
+        {
+            "employeeID": 891,
+            "name": "Alexander O.",
+            "salary": 981000,
+            "departmentName": "Gaming Development"
+        },
+        {
+            "employeeID": 640,
+            "name": "Alisa O.",
+            "salary": 30000,
+            "departmentName": "Software Development - Intern"
+        },
+        {
+            "employeeID": 101,
+            "name": "August O.",
+            "salary": 30000,
+            "departmentName": "Marketing - Intern"
+        },
+        {
+            "employeeID": 579,
+            "name": "Tawana W.",
+            "salary": 60000,
+            "departmentName": "Compliance"
+        },
+        {
+            "employeeID": 214,
+            "name": "Patricia M.",
+            "salary": 500000,
+            "departmentName": "VP of Compliance"
+        },
+        {
+            "employeeID": 107,
+            "name": "Edward I.",
+            "salary": 60000,
+            "departmentName": "Project Management"
+        },
+        {
+            "employeeID": 445,
+            "name": "Diamond W.",
+            "salary": 40000,
+            "departmentName": "Administrative"
+        },
+        {
+            "employeeID": 601,
+            "name": "Briana S.",
+            "salary": 73000,
+            "departmentName": "Marketing"
+        },
+        {
+            "employeeID": 304,
+            "name": "Alina S.",
+            "salary": 65000,
+            "departmentName": "Legal"
+        }
+    ]
+}
