@@ -14,10 +14,10 @@ class Medium extends Component {
           this.state = {
             person: 
               {
-              Name: "Adrianna" ,
+              Name: "Adrianna Isom-Owen",
               Number: "704-333-3333",
               DOB: "09/21/1995"
-            }
+              }
       
           }
       
@@ -35,6 +35,8 @@ class Child extends Medium {
         return (
             <div className="medium">
             <p>{this.props.BasicInfo.person.Name}</p>
+            <p>{this.props.BasicInfo.person.Number}</p>
+            <p>{this.props.BasicInfo.person.DOB}</p>
             </div> 
         );
     }

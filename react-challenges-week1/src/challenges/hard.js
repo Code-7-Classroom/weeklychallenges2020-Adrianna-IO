@@ -36,19 +36,30 @@ class Hard extends Component {
         }
     render () {
         return (
-            // person.map(//child element) or for each 
-            // // map through and render 3 times
-           <Child BasicInfo = {this.state} />
+            <div className="main">
+                {/* This method itierates through the state and each element of the array
+                accepts info as an argument and returns a child div. Each child div has a 
+                property called BasicInfo that is equal to the data from this.state. */}
+                {this.state.person.map(
+                    info => {
+                        return <Child BasicInfo = {info} />
+                    }
+                )}
+            </div>
+           
         );
     }
 }
 
-
+// the child renders data from the state through the BasicInfo prop, which
+// then allows us to call on the keys from state.
 class Child extends Hard {
     render () {
         return (
             <div className="hard">
-            <p>{this.props.BasicInfo.person.Name}</p>
+            <p>{this.props.BasicInfo.Name}</p>
+            <p>{this.props.BasicInfo.Number}</p>
+            <p>{this.props.BasicInfo.DOB}</p>
             </div> 
         );
     }

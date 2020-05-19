@@ -17,9 +17,9 @@ class Easy extends Component {
     render () {
         return (
             <div className="basicInfo">
-                <p>Name: Adrianna Isom-Owen</p>
-                <p>Number: 704-333-3333</p>
-                <p>Date of Birth: 09/21/1995</p>
+                <p>Adrianna Isom-Owen</p>
+                <p>704-333-3333</p>
+                <p>09/21/1995</p>
             </div>
         );
     }
